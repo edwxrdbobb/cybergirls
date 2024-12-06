@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll - Cyber Girls Initiative</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="/index.html" class="logo">
+                <img src="/placeholder.svg?height=40&width=40" alt="">
+                Cyber Girls
+            </a>
+            <ul>
+                <li><a href="/whoweare.html" class="active">Who We Are</a></li>
+                <li><a href="/programdetails.html" class="active">Program Details</a></li>
+                <li><a href="/enrollment.html">Enrollment</a></li>
+                <li><a href="/resourcehub.html">Resource Hub</a></li>
+                <li><a href="/successstories.html" >Success Stories</a></li>
+                <li><a href="/mentorprices.html" >Mentor Price</a></li>
+                <li><a href="/contact.html" class="btn btn-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Enroll Now</h1>
+                <p>Take the first step towards your cybersecurity career</p>
+            </div>
+        </section>
+
+        <section class="enrollment-form">
+            <div class="container">
+                <div class="form-container">
+                    <form action="/submit-enrollment" method="POST">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label>First Name <span class="required">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Last Name <span class="required">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Email <span class="required">*</span></label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Phone</label>
+                                <input type="tel">
+                            </div>
+                            <div class="form-field">
+                                <label>Program <span class="required">*</span></label>
+                                <select required>
+                                    <option value="">Select a Program</option>
+                                    <option value="basics">Cybersecurity Basics</option>
+                                    <option value="advanced">Advanced Security</option>
+                                    <option value="pentesting">Penetration Testing</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label>Preferred Start Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-field full-width">
+                                <label>Background/Experience</label>
+                                <textarea></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer remains the same -->
+</body>
+</html>
